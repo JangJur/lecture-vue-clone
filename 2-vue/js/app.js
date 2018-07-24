@@ -1,4 +1,5 @@
 import SearchModel from './models/SearchModel.js'
+
 new Vue({
     el: '#app',
     data: {
@@ -11,10 +12,10 @@ new Vue({
             this.search()
         },
         onKeyup(e) {
-            if(!this.query.length) this.onReset()
+            if(!this.query.length) this.resetForm()
         },
         onReset(e) {
-            this.resetForm
+            this.resetForm()
         },
         search() {
             SearchModel.list().then(data => {
@@ -24,7 +25,8 @@ new Vue({
         },
         resetForm() {
             this.query = ''
-            debugger
+            this.submitted = false
+            this.searchResult = []
         }
     }
 })
