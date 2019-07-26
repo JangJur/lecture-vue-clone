@@ -1,6 +1,6 @@
-import SearchModel from './models/SearchModel.js'
-import KeywordModel from './models/KeywordModel.js'
-import HistoryModel from './models/HistoryModel.js'
+import SearchModel from '../../1-vanilla/js/models/SearchModel.js'
+import KeywordModel from '../../1-vanilla/js/models/KeywordModel.js'
+import HistoryModel from '../../1-vanilla/js/models/HistoryModel.js'
 
 new Vue({
     el: '#app',
