@@ -13,4 +13,4 @@ KeywordView.render = function (data = []) {
     this.show()
 }
 
-export default KeywordView
+export default KeywordVie
